@@ -9,6 +9,10 @@ export default async function Home({ searchParams } : {searchParams: Promise<{qu
         <p className="sub-heading !max-w-3xl">Submit Ideas, Vote on Pitches, and Get Noticed in Virtual Competitions.</p>
         <SearchForm query={query}/>
       </section>
+
+      <section className="section_container">
+
+      </section>
     </>
   );
 }
