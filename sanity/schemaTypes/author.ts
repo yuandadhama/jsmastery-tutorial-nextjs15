@@ -1,4 +1,4 @@
-import { UserIcon } from "lucide-react";
+const UserIcon = require('lucide-react')
 import { defineType, defineField } from "sanity";
 
 export const author = defineType({

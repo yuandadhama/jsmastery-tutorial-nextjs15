@@ -1,11 +1,11 @@
 import {defineQuery} from "groq";
 
-export const STARTUPS_QUERY = defineQuery(`[_type == "startup" && defined(slug.current)] | order(_createdAt desc) {
+export const STARTUPS_QUERY = defineQuery(`*[_type == "startup" && defined(slug.current)] | order(_createdAt desc) {
     _id,
     title,
     slug,
     _createdAt,
-    author {
+    author -> {
         _id,
         name, image, bio
     },
